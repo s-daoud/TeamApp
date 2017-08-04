@@ -12,7 +12,8 @@
 class User < ApplicationRecord
 
   belongs_to :team
-  
+
   has_many :points, dependent: :destroy
 
+  before_update :update_date
 end
