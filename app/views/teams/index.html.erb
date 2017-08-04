@@ -1,0 +1,9 @@
+<h1>Team Points</h1>
+
+<ul>
+  <% @teams.each do |team| %>
+    <li>
+      <%= team.name %>: <%= team.all_points %> Points
+    </li>
+  <% end %>
+</ul>

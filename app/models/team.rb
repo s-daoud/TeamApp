@@ -11,7 +11,11 @@
 class Team < ApplicationRecord
 
   has_many :users
-  
+
   has_many :points,
     through: :users
+
+  def all_points
+    self.points.reduce(0) { |sum, entry| sum + entry.points }
+  end
 end
