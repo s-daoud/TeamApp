@@ -185,6 +185,7 @@ DEPENDENCIES
   pry-rails
   rack-handlers
   rails (~> 5.0.1)
+  rake
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)

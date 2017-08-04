@@ -24,6 +24,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'rack-handlers'
 gem 'pry-rails'
 gem 'annotate'
+gem 'rake'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
