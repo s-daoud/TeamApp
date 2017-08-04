@@ -11,6 +11,8 @@
 
 class Point < ApplicationRecord
 
-  belongs_to :user
+  validates :points, presence: true
+
+  belongs_to :user #runs presence validation
 
 end

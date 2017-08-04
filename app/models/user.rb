@@ -11,7 +11,9 @@
 
 class User < ApplicationRecord
 
-  belongs_to :team
+  validates :name, presence: true
+
+  belongs_to :team #runs presence validation
 
   has_many :points, dependent: :destroy
 
